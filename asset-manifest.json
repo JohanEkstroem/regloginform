@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/regloginform/static/js/main.096aa261.js",
-    "index.html": "/regloginform/index.html",
-    "main.096aa261.js.map": "/regloginform/static/js/main.096aa261.js.map"
+    "main.js": "/static/js/main.096aa261.js",
+    "index.html": "/index.html",
+    "main.096aa261.js.map": "/static/js/main.096aa261.js.map"
   },
   "entrypoints": [
     "static/js/main.096aa261.js"
