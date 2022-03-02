@@ -79,5 +79,3 @@ export default function App() {
     </div>
   );
 }
-
-/* <NavLink className={({ isActive }) => (isActive ? 'red' : 'blue')} />; */
