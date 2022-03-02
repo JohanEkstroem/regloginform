@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-primary:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.navLink {
+  text-decoration: none;
+  font-size: larger;
+}
+.navLink:hover {
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+}
+.navLinkActive {
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navLinkActive:hover {
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  text-decoration: none;
+}
+#root {
+  height: 100vh;
+  background-image: url(image24.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  margin-top: 10vh;
+  width: 40vw;
+  min-width: 40vw;
+  padding: 2rem;
+  background: rgba(204, 204, 204, 0.5);
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: '✔';
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: '✖';
+}

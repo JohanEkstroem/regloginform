@@ -1,25 +1,83 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, NavLink } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div
+        style={{
+          backgroundColor: '#212529',
+        }}
+      >
+        <h1
+          style={{
+            marginLeft: '2vw',
+            color: 'white',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Kino2punktnoll
+        </h1>
+        <p
+          style={{
+            marginTop: '-25px',
+            marginLeft: '2vw',
+            color: 'white',
+          }}
+        >
+          En tagline
+        </p>
+        <nav
+          className="navbar"
+          style={{
+            display: 'flex',
+            paddingBottom: '1rem',
+            justifyContent: 'space-around',
+          }}
+        >
+          <NavLink
+            to="/home"
+            className={({ isActive }) =>
+              isActive ? 'navLinkActive' : 'navLink'
+            }
+          >
+            Hem
+          </NavLink>
+          <NavLink
+            to="/filmer"
+            className={({ isActive }) =>
+              isActive ? 'navLinkActive' : 'navLink'
+            }
+          >
+            Filmer
+          </NavLink>
+          <NavLink
+            to="/mypages"
+            className={({ isActive }) =>
+              isActive ? 'navLinkActive' : 'navLink'
+            }
+          >
+            Mina Sidor
+          </NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive ? 'navLinkActive' : 'navLink'
+            }
+          >
+            Logga in
+          </NavLink>
+          <NavLink
+            to="/register"
+            className={({ isActive }) =>
+              isActive ? 'navLinkActive' : 'navLink'
+            }
+          >
+            Registrera
+          </NavLink>
+        </nav>
+      </div>
+      <Outlet />
     </div>
   );
 }
 
-export default App;
+/* <NavLink className={({ isActive }) => (isActive ? 'red' : 'blue')} />; */
